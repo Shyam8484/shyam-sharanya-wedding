@@ -1,32 +1,61 @@
-# Shyam & Sharanya Wedding Invitation — GitHub Pages Package
+# Shyam & Sharanya — Wedding Invitation
 
-This folder is a self-contained static website extracted from the supplied wedding invitation HTML.
+GitHub Pages-ready static wedding invitation.
 
-## Files
-- `index.html` — main invitation page. Use this as the GitHub Pages entry point.
-- `assets/images/` — all embedded image assets extracted from the original HTML and referenced with relative paths.
-- `.nojekyll` — tells GitHub Pages to serve the site without Jekyll processing.
-- `source-original.html` — untouched backup of the supplied HTML.
+## Folder structure
 
-## Dependencies / hosting requirements
-- No npm, Node.js, build step, server, or database is required.
-- CSS and JavaScript are embedded in `index.html`.
-- All image data that was embedded as base64 in the supplied HTML has been extracted into `assets/images/`.
-- The invitation uses browser APIs such as Canvas/Pointer Events for the scratch-card interaction.
-- Google Maps buttons link to Google Maps and therefore require internet access when clicked.
-- There are no external CSS/JS library dependencies in the supplied HTML.
+```text
+Shyam_Sharanya_GitHub_Pages_Invitation_Final/
+├── index.html
+├── .nojekyll
+├── README.md
+├── ASSET-MANIFEST.json
+└── assets/
+    └── images/
+        ├── 01-wedding-ceremony.png
+        ├── 02-reception1-legacy.png
+        ├── 03-reception2-legacy.jpg
+        ├── 04-reception1-illustration.jpg
+        ├── 05-reception-stage-illustration.jpg
+        ├── 06-hero-garden.png
+        ├── 07-reception1-twilight.png
+        ├── 08-reception2-twilight.png
+        └── 09-couple-photo.jpg
+```
+
+## What is included
+
+- `index.html` — complete invitation page.
+- `assets/images/` — all 9 unique image assets extracted from the HTML and referenced locally.
+- `.nojekyll` — prevents GitHub Pages from applying Jekyll processing.
+- `ASSET-MANIFEST.json` — image dimensions, file sizes, hashes, and dependency notes.
 
 ## GitHub Pages deployment
-1. Create a GitHub repository (for example `wedding-invitation`).
-2. Upload the **contents of this folder** to the repository root — upload `index.html`, `.nojekyll`, `assets/`, and optionally `source-original.html`.
-3. On GitHub, open **Settings → Pages**.
+
+1. Create a new GitHub repository.
+2. Upload **all files and folders inside this package** to the repository root. Do not upload the ZIP itself as the website.
+3. Open **Settings → Pages** in the repository.
 4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select your main branch and `/ (root)` folder, then save.
-6. GitHub will provide a Pages URL similar to `https://USERNAME.github.io/REPOSITORY/`.
-7. Open that URL on mobile and desktop to test the invitation before sharing it.
+5. Select your main branch (usually `main`) and the `/ (root)` folder.
+6. Save.
+7. GitHub will publish the invitation at:
+
+`https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/`
+
+Allow a few minutes for the first deployment.
 
 ## Important
-Keep the `assets` folder in the same relative location as `index.html`. Do not move or rename the image files unless you also update their paths in `index.html`.
 
-## Local test
-You can double-click `index.html` for a basic local test. For the most reliable browser behavior, serve the folder with any simple static HTTP server or use GitHub Pages directly.
+- Keep the `assets` folder in the same location relative to `index.html`.
+- Do not rename or move the image files unless you also update the paths in `index.html`.
+- The site does not require npm, Node.js, a server, or a build command.
+- The Google Maps buttons require an internet connection and open Google Maps externally.
+- For a clean invitation URL, use a short repository name such as `shyam-sharanya-wedding`.
+
+## Sharing the invitation
+
+After GitHub Pages is active, send the published Pages URL. Example:
+
+`https://YOUR-USERNAME.github.io/shyam-sharanya-wedding/`
+
+If you later connect a custom domain, GitHub Pages can also serve the same invitation from that domain.

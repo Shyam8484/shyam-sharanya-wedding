@@ -1,20 +1,90 @@
 {
-  "source_html": "Shyam_Sharanya_Wedding_Invitation_Smooth_Scratch (1).html",
-  "embedded_image_assets_extracted": 9,
+  "project": "Shyam & Sharanya Wedding Invitation",
+  "hosting": "GitHub Pages",
+  "entry_point": "index.html",
   "assets": [
-    "01-wedding-card-legacy.jpg",
-    "02-reception1-legacy.jpg",
-    "03-reception2-legacy.jpg",
-    "04-reception1-alt.jpg",
-    "05-hero-golden-garden.png",
-    "06-wedding-ceremony.png",
-    "07-reception1-final.png",
-    "08-reception2-final.png",
-    "09-couple-photo.jpg"
+    {
+      "file": "assets/images/01-wedding-ceremony.png",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536,
+      "size_bytes": 3197024,
+      "sha256": "a48b0c8fffe57a705d7795c69642ff027f6ef9416ad1bbd8c96801a5934d5914"
+    },
+    {
+      "file": "assets/images/02-reception1-legacy.png",
+      "format": "JPEG",
+      "width": 1024,
+      "height": 1536,
+      "size_bytes": 305252,
+      "sha256": "ceacae381fc4349d613e096fd3b5d060009f35f2f413b9be40ff8edab4a381b7"
+    },
+    {
+      "file": "assets/images/03-reception2-legacy.jpg",
+      "format": "JPEG",
+      "width": 1200,
+      "height": 820,
+      "size_bytes": 94630,
+      "sha256": "01b2e0355ecb1c5808b59bfc6cc65179861a0e82d646e1f7deca994fa754ec06"
+    },
+    {
+      "file": "assets/images/04-reception1-illustration.jpg",
+      "format": "JPEG",
+      "width": 1200,
+      "height": 820,
+      "size_bytes": 84356,
+      "sha256": "5c7dfd073cc2a211e258a0f1099a4faab6bf7b9a230e143aebba0c417fba67db"
+    },
+    {
+      "file": "assets/images/05-reception-stage-illustration.jpg",
+      "format": "JPEG",
+      "width": 1200,
+      "height": 820,
+      "size_bytes": 80578,
+      "sha256": "f3d37da565081060ab0d8bfb8155a83667578b962a739f9739ed1ec17b616f08"
+    },
+    {
+      "file": "assets/images/06-hero-garden.png",
+      "format": "PNG",
+      "width": 1343,
+      "height": 1171,
+      "size_bytes": 3617000,
+      "sha256": "e30e5d1c3fe8673f2e09943a0f2e60f0df1d9e3a4a6c9d5e21349aca9eafd159"
+    },
+    {
+      "file": "assets/images/07-reception1-twilight.png",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536,
+      "size_bytes": 3377183,
+      "sha256": "2bda40d7a39889dc8ebfeeee4c826d41f70cffc4112496dca29adfdc94118578"
+    },
+    {
+      "file": "assets/images/08-reception2-twilight.png",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536,
+      "size_bytes": 3487698,
+      "sha256": "5c08bc967da5508157c1c7c8a105977cb669a6e59207252191f5322ad6f583cf"
+    },
+    {
+      "file": "assets/images/09-couple-photo.jpg",
+      "format": "JPEG",
+      "width": 1024,
+      "height": 1536,
+      "size_bytes": 386635,
+      "sha256": "6ef04225c36feb375bfc9d6b95ac37cc00375daa7aa53c481a8601e641fc8f67"
+    }
   ],
-  "external_urls": [
-    "https://www.google.com/maps/search/?api=1&query=Highness+Park+Padmanabhapuram",
-    "https://www.google.com/maps/search/?api=1&query=Lotus+Wedding+%26+Banquet+Hall+Thalassery",
-    "https://www.google.com/maps/search/?api=1&query=SPP+Gardens+Maduravoyal"
+  "external_dependencies": {
+    "google_maps": 3,
+    "css_libraries": 0,
+    "js_libraries": 0,
+    "fonts_loaded_externally": 0
+  },
+  "notes": [
+    "All image assets used by the invitation are stored locally under assets/images/.",
+    "The invitation is a static site; no build step, Node.js, npm, database, or backend is required.",
+    "Google Maps buttons open external Google Maps URLs."
   ]
 }
